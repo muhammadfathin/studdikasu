@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="CSS/Landing Page.CSS" />
+    <link rel="stylesheet" href="JAVASCRIPT/Landing Page.JS" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">JAVASCRIPT</h1>
+      <ul>
+        <li><a href="#Javsacrpit">Javsacrpit</a></li>
+        <li><a href="#Example">Example</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        
+      </ul>
+    </header>
+
+    <section id="Javsacrpit">
+      <h2>Javsacrpit</h2>
+      <div class="box">
+      <img src="FOTO/js.png" alt=""/><br />
+    </div>
+      <p>
+        JavaScript adalah bahasa pemrograman tingkat tinggi yang sering
+        digunakan untuk pengembangan web. Dibuat pada tahun 1995 oleh Brendan
+        Eich di Netscape, JavaScript awalnya dikembangkan sebagai bahasa
+        scripting sederhana untuk memanipulasi elemen-elemen pada halaman web.
+        Namun, sejak saat itu, JavaScript telah berkembang menjadi bahasa yang
+        sangat kuat dan serbaguna.Berikut adalah beberapa poin penting tentang
+        JavaScript:
+      </p>
+
+      <ol>
+        <li>
+          Bahasa pemrograman client-side: JavaScript secara khusus dirancang
+          untuk dieksekusi di sisi klien (client-side), yaitu di web browser.
+          Ini memungkinkan JavaScript untuk mengendalikan dan memanipulasi
+          struktur dan tampilan halaman web menggunakan model objek dokumen
+          (Document Object Model atau DOM). Dengan JavaScript, Anda dapat
+          membuat interaksi antarmuka pengguna yang dinamis, memvalidasi input
+          formulir, menangani peristiwa (event), membuat animasi, dan
+          memodifikasi konten halaman secara dinamis tanpa memerlukan permintaan
+          server tambahan.
+        </li>
+        <br />
+        <li>
+          Pengembangan web: JavaScript banyak digunakan dalam pengembangan web
+          untuk membuat antarmuka pengguna yang responsif, mengimplementasikan
+          permainan berbasis web, membangun aplikasi satu halaman (single-page
+          applications atau SPAs), dan mengembangkan aplikasi seluler lintas
+          platform menggunakan kerangka kerja (framework) seperti React Native
+          atau Ionic.
+        </li>
+        <br />
+        <li>
+          Pengembangan server-side: JavaScript juga dapat digunakan untuk
+          pengembangan server-side menggunakan platform seperti Node.js. Dengan
+          Node.js, Anda dapat membangun aplikasi jaringan dan API server yang
+          dapat diukur menggunakan JavaScript. Hal ini memungkinkan penggunaan
+          JavaScript baik di sisi klien maupun sisi server, sehingga
+          memungkinkan pengembangan full-stack dengan bahasa pemrograman yang
+          konsisten.
+        </li>
+        <br />
+        <li>
+          Pustaka dan kerangka kerja: JavaScript memiliki ekosistem yang luas
+          berupa pustaka dan kerangka kerja yang mempermudah dan mempercepat
+          pengembangan web. Beberapa kerangka kerja JavaScript populer termasuk
+          React, Angular, dan Vue.js, yang menyediakan alat-alat yang kuat untuk
+          membangun antarmuka pengguna yang kompleks dan mengelola keadaan
+          aplikasi. Selain itu, terdapat banyak pustaka tersedia untuk
+          tugas-tugas tertentu seperti visualisasi data (D3.js), animasi (GSAP),
+          dan penanganan permintaan HTTP (Axios).
+        </li>
+        <br />
+        <li>
+          API browser: JavaScript menyediakan akses ke berbagai API browser,
+          yang memungkinkan pengembang untuk berinteraksi dengan fitur-fitur web
+          seperti memanipulasi DOM, melakukan permintaan HTTP (AJAX dan Fetch),
+          menyimpan data di browser (Web Storage dan IndexedDB), menangani input
+          pengguna (peristiwa dan formulir), dan masih banyak lagi.
+        </li>
+        <br />
+        <li>
+          Pengembangan aplikasi seluler lintas platform: Dengan menggunakan
+          kerangka kerja seperti React Native atau Ionic, JavaScript dapat
+          digunakan untuk membangun aplikasi seluler untuk platform iOS dan
+          Android. Kerangka kerja ini memungkinkan pengembang untuk menulis kode
+          sekali dan mengimplementasikannya pada beberapa platform, sehingga
+          menghemat waktu dan usaha.
+        </li>
+        <br />
+      </ol>
+
+      JavaScript terus berkembang, dengan penambahan fitur dan perbaikan yang
+      dilakukan secara teratur. Bahasa ini telah menjadi bahasa yang sangat
+      penting dalam pengembangan web, menawarkan fleksibilitas, serbaguna, dan
+      kompatibilitas yang luas di berbagai browser dan platform.
+      <br />
+      <br id="Example"/>
+      Berikut adalah beberapa contoh penggunaan JavaScript dalam pengembangan
+      web:
+      <ol>
+        <li>
+          Validasi Formulir
+          <pre>
+                    function validateForm() {
+                        var name = document.getElementById("name").value;
+                        var email = document.getElementById("email").value;
+                        
+                        if (name === "") {
+                          alert("Nama harus diisi");
+                          return false;
+                        }
+                        
+                        if (email === "") {
+                          alert("Email harus diisi");
+                          return false;
+                        }
+                        
+                        // Validasi format email
+                        var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        if (!email.match(emailRegex)) {
+                          alert("Format email tidak valid");
+                          return false;
+                        }
+                        
+                        return true;
+                      }                      
+                    </pre>
+        </li>
+        <br />
+        <li>
+          Manipulasi DOM
+          <pre>
+                    // Mengubah teks pada elemen dengan id "myElement"
+                    document.getElementById("myElement").innerHTML = "Teks baru";
+                    
+                    // Menambahkan elemen baru
+                    var newElement = document.createElement("p");
+                    newElement.innerHTML = "Paragraf baru";
+                    document.getElementById("container").appendChild(newElement);
+                    
+                    // Menghapus elemen
+                    var elementToRemove = document.getElementById("elementToRemove");
+                    elementToRemove.parentNode.removeChild(elementToRemove);                    
+                </pre>
+        </li>
+        <br />
+        <li>
+          Manipulasi CSS
+          <pre>
+                    // Mengubah warna latar belakang elemen dengan id "myElement"
+                    document.getElementById("myElement").style.backgroundColor = "blue";
+                    
+                    // Mengubah ukuran font pada elemen dengan kelas "myClass"
+                    var elements = document.getElementsByClassName("myClass");
+                    for (var i = 0; i < elements.length; i++) {
+                      elements[i].style.fontSize = "20px";
+                    }
+                    
+                    // Animasi elemen
+                    var elementToAnimate = document.getElementById("elementToAnimate");
+                    elementToAnimate.style.position = "relative";
+                    elementToAnimate.style.animation = "myAnimation 2s infinite";
+                    
+                    @keyframes myAnimation {
+                      0% { left: 0; }
+                      50% { left: 200px; }
+                      100% { left: 0; }
+                    }                    
+                </pre>
+        </li>
+        <br />
+        <li>
+          Menggunakan AJAX
+          <pre>
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                      if (this.readyState == 4 && this.status == 200) {
+                        var response = JSON.parse(this.responseText);
+                        // Lakukan sesuatu dengan data yang diterima dari server
+                      }
+                    };
+                    xhttp.open("GET", "data.json", true);
+                    xhttp.send();                    
+                </pre>
+        </li>
+        <br />
+        <li>
+          Event Handling
+          <pre>
+                    // Menambahkan event listener untuk tombol dengan id "myButton"
+                    var button = document.getElementById("myButton");
+                    button.addEventListener("click", function() {
+                      // Tindakan yang akan dijalankan saat tombol diklik
+                      alert("Tombol diklik!");
+                    });
+                    
+                    // Menambahkan event listener untuk input dengan id "myInput"
+                    var input = document.getElementById("myInput");
+                    input.addEventListener("change", function() {
+                      // Tindakan yang akan dijalankan saat nilai input berubah
+                      var value = input.value;
+                      console.log("Nilai input: " + value);
+                    });                    
+                </pre>
+        </li>
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="About Me">
+        <div class="resume-section-content">
+            <h2 class="mb-5">About Me</h2>
+
+            <div class="photo-item">
+                <div class="photo-circle">
+                    <img src="FOTO/IMG_9694.JPG" alt="Foto 4">
+
+                </div>
+                <br>
+                <p class="photo-name">"Halo semua! Saya adalah Muhammad Fathin Abdul Alim, 
+                  seorang mahasiswa yang berasal dari Bandar Lampung. Lahir pada tanggal 31 Desember 2001, 
+                  saya merupakan anak keenam dari enam bersaudara dan sekarang sedang menempuh studi di Politeknik Negeri Lampung. 
+                  Jurusan saya adalah Ekonomi dan Bisnis dengan kekhususan dalam Program Studi D3 Manajemen Informatika, yang sangat menarik!".
+            </div>
+    </section>
+    <hr class="m-0" />
+  </body>
+</html>
